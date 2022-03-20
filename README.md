@@ -28,5 +28,5 @@
 <p> Testing was not required for this application. </p>
 
 ## <h3 id='questions'>Questions</h3>
-<p>Have questions? Please feel free to reach out to me on github at Have questions? Please feel free to reach out to me on github at <a href='https://github.com/skcruzer'target='_blank'>skcruzer </a> or by email at <a href='mailto:seankennethcruz@gmail.com'target='_blank'>seankennethcruz@gmail.com</a>.</p>
+<p>Have questions? Please feel free to reach out to me on github at Have questions? Please feel free to reach out to me on github at <a href='https://github.com/skcruzer'target='_blank'>skcruzer</a> or by email at <a href='mailto:seankennethcruz@gmail.com'target='_blank'>seankennethcruz@gmail.com</a>.</p>
     
