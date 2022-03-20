@@ -1,6 +1,10 @@
 const express = require('express')
 const path = require('path')
-const notes = require('./db/db.json')
+// variable notes needs to be able to be changed so it can be deleted
+let notes = require('./db/db.json')
+
+// give each note a unique id
+const { uid } = require('uid')
 
 // call express as a function
 const app = express()
@@ -31,11 +35,19 @@ app.post('/api/notes', (req, res) => {
   // user will receive a new note to save
   let newNote = {
     title: req.body.title,
-    text: req.body.text
+    text: req.body.text,
+    // give each note a unique id
+    id: uid()
   }
   // this will add user's note to the db.json file
   notes.push(newNote)
   res.json(200)
+})
+
+app.delete('/api/notes/:id', (req,res) => {
+  // array is returned as long as note is not the id selected
+  notes = notes.filter(note => note.id !== req.params.id)
+  res.json(notes)
 })
 
 // running on a port which is local host 3000
